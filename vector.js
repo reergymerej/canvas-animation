@@ -31,6 +31,10 @@ define([
       if (magnitude) {
         return new Vector(this.x / magnitude, this.y / magnitude);
       }
+    },
+
+    dotProduct: function (v2) {
+      return new Vector(this.x * v2.x + this.y * v2.y);
     }
   };
 
