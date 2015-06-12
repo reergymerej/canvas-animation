@@ -14,11 +14,15 @@ define([
     add: function (v2) {
       this.x += v2.x;
       this.y += v2.y;
+
+      return this;
     },
 
     subtract: function (v2) {
       this.x -= v2.x;
       this.y -= v2.y;
+
+      return this;
     },
 
     magnitude: function () {
